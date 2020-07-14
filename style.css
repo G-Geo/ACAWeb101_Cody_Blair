@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: auto;
+    height: auto;
+    background-image:url(Background.jpg);
+    background-size: 1800pt;
+    margin: auto;
+    margin-top: 3%; 
+    
+  }
+  /* What kind of selector is this? */
+  .logo {
+    width: 150pt;
+    height: 150pt;
+    margin: 3% 10%;
+    background-color: rgb(213, 204, 216);
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 1300pt;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 1790pt;
+  }
+
+  main {
+    height: auto;
+    width: 1800pt;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+
+  /* This is an element within an element selector */ 
+  nav > a {
+    margin: 4% 5% 3%;
+    height: 15%;
+    width: 15%;
+    color: rgb(1, 142, 207);
+    font-family: Trebuchet MS;
+    font-size: 25px;
+    font-style: Bold;
+    border-radius: 25px;
+    background: rgb(69, 63, 71);
+    border-style: inset;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid rgb(153, 148, 148);
+    margin-left: 10pt;
+  }
+
+  .has-border {
+    font-family: Trebuchet;
+    font-size: 25px;
+    font-style: bold;
+    border-radius: 25px;
+    border: 2px solid rgb(153, 148, 148);
+    background: rgb(69, 63, 71);
+    padding: 40px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-weight: 900;
+    padding-right: 2%;
+    font-style: bold;
+  }
+  /* This is an ID selector */
+  #profile-pic {
+    width: 400pt;
+    height: 500pt;
+    border-radius: 100pt;
+    margin: 8pt auto;
+    grid-column: 2/3;
+  }
+  
+
+  h1 {
+    
+    font-size: 50px;
+    font-family: 'Trebuchet MS';
+    color:  rgb(8, 163, 235);
+    grid-column: 2/3;
+    margin: 5% auto;
+    border-bottom: 1px solid #1940A9;
+  }
+
+  h2 {
+    font-size: 30px;
+    grid-column: 2/3;
+    color: rgb(1, 142, 207);
+    margin: 3% auto;
+    font-style: italic;
+  }
+
+  .small-text {
+    grid-column: 2/3;
+    color: white;
+    font-size: 10px;
+    margin: 3% auto;
+  }
+
+  button {
+    grid-column: 2/3;
+    margin: 3% auto;
+    width: 35%;
+    height: 45%;
+    font-family: Trebuchet;
+    font-size: 30px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 10px;
+    padding-bottom: 3%;
+    text-align: center;
+    color: rgb(1, 142, 207);
+    letter-spacing: 10px;
+    font-style: Bold, Italic;
+    border: 3px solid rgb(1, 142, 207)
+
+  }
