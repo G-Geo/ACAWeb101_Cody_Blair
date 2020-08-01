@@ -23,23 +23,23 @@ body {
   }
 
   /* This is an element within an element selector */ 
- a {
-   display: flex;
+ .a {
     color: rgb(1, 142, 207);
     font-family: Trebuchet MS;
     font-style: Bold;
     border-radius: 15px;
     background: rgb(69, 63, 71);
-    padding: 10px;
+    padding: 8%;
     border: 2px solid rgb(153, 148, 148);
-    justify-content: center;
     font-size: 1em;
   }
 .nav1 {
+  margin-left: auto;
   grid-row-start: 1;
   grid-column-start: 3;
 }
 .nav2 {
+  margin-left: auto;
   grid-row-start: 1;
   grid-column-start: 4;
 }
@@ -70,7 +70,7 @@ body {
     margin-left: 15%;
   }
 
-  button {
+ #portfolio {
     margin-left: 15%;
     font-family: Trebuchet;
     font-size:20px;
