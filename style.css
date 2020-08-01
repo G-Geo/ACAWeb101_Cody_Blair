@@ -1,126 +1,93 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: auto;
-    height: auto;
     background-image:url(Background.jpg);
-    background-size: 1800pt;
-    margin: auto;
-    margin-top: 3%; 
-    
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-columns: 33% 33% 17% 17%;
   }
   /* What kind of selector is this? */
   .logo {
-    width: 150pt;
-    height: 150pt;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 75pt;
+    height: 75pt;
     margin: 3% 10%;
     background-color: rgb(213, 204, 216);
   }
 
   header {
     display: grid;
-    grid-template-columns: 40% 60%;
-    width: 1300pt;
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: 1790pt;
-  }
-
-  main {
-    height: auto;
-    width: 1800pt;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
 
   /* This is an element within an element selector */ 
-  nav > a {
-    margin: 4% 5% 3%;
-    height: 15%;
-    width: 15%;
+ a {
+   display: flex;
     color: rgb(1, 142, 207);
     font-family: Trebuchet MS;
-    font-size: 25px;
     font-style: Bold;
-    border-radius: 25px;
+    border-radius: 15px;
     background: rgb(69, 63, 71);
-    border-style: inset;
-    padding: 40px;
-    text-align: center;
+    padding: 10px;
     border: 2px solid rgb(153, 148, 148);
-    margin-left: 10pt;
+    justify-content: center;
+    font-size: 1em;
   }
-
-  .has-border {
-    font-family: Trebuchet;
-    font-size: 25px;
-    font-style: bold;
-    border-radius: 25px;
-    border: 2px solid rgb(153, 148, 148);
-    background: rgb(69, 63, 71);
-    padding: 40px;
-  }
-
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    font-weight: 900;
-    padding-right: 2%;
-    font-style: bold;
-  }
+.nav1 {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+.nav2 {
+  grid-row-start: 1;
+  grid-column-start: 4;
+}
+  
   /* This is an ID selector */
   #profile-pic {
-    width: 400pt;
-    height: 500pt;
+    width: 220pt;
+    height: 280pt;
     border-radius: 100pt;
-    margin: 8pt auto;
-    grid-column: 2/3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-left: 15%;
   }
   
 
   h1 {
-    
-    font-size: 50px;
+    font-size: 25px;
     font-family: 'Trebuchet MS';
     color:  rgb(8, 163, 235);
-    grid-column: 2/3;
-    margin: 5% auto;
     border-bottom: 1px solid #1940A9;
+    margin-left: 15%;
   }
 
   h2 {
-    font-size: 30px;
-    grid-column: 2/3;
+    font-size: 15px;
     color: rgb(1, 142, 207);
-    margin: 3% auto;
     font-style: italic;
-  }
-
-  .small-text {
-    grid-column: 2/3;
-    color: white;
-    font-size: 10px;
-    margin: 3% auto;
+    margin-left: 15%;
   }
 
   button {
-    grid-column: 2/3;
-    margin: 3% auto;
-    width: 35%;
-    height: 45%;
+    margin-left: 15%;
     font-family: Trebuchet;
-    font-size: 30px;
+    font-size:20px;
     border-radius: 25px;
     background: transparent;
     padding: 10px;
-    padding-bottom: 3%;
     text-align: center;
     color: rgb(1, 142, 207);
     letter-spacing: 10px;
     font-style: Bold, Italic;
     border: 3px solid rgb(1, 142, 207)
-
   }
+main {
+  margin-top: auto;
+  padding: 10%;
+  grid-row-start:3;
+  grid-column-start: 2;
+  text-align: center;
+  padding-top: 16%;
+}
